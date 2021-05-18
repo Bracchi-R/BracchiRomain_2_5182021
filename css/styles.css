@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+    line-height: 1.4em;
+}
+
+.gras
+{
+    font-weight: 700;
+}
+
+#tete
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+}
+
+ul 
+{
+    padding:1em;
+    margin:1em;
+    list-style-type:none;
+}
+
+li 
+{
+    float:left;
+}
+
+li a
+{
+    color: #0065FC;
+    text-decoration: none;
+    padding:1em;
+    margin:1em;
+}
+
+li a:hover
+{
+    color:black;
+}
+
+h1
+{
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+span
+{
+    font-size: 1.4em;
+}
+
+#recherche>i
+{
+    background-color:#F2F2F2;
+    padding: 0.8em;
+    border-radius: 15px 0 0 15px;
+}
+
+#recherche>input
+{
+    padding: 0.8em;
+    border:#F2F2F2;
+}
+
+#recherche
+{
+    display: flex;
+}
+
+#recherche>button
+{
+    background-color:#0065FC;
+    color:#FFFFFF;
+    border-radius: 0 15px 15px 0;
+    padding: 1em;
+    border: #0065FC;
+}
+
+#filtre
+{
+    font-size: 0.8em;
+    padding: 1.5em 0 1.5em 0;
+}
+
+#filtre>span>i
+{
+    color: #0065FC;
+    background-color: #e0ecfd;
+    padding: 0.8em;
+    border-radius: 100%;
+    margin-right: 0.8em;
+    width:1em;
+    height:1em;
+    text-align: center;
+}
+
+#filtre>span
+{
+    margin: 1.2em;
+    border: 1mm solid #F2F2F2;
+    border-radius: 25px;
+    padding: 0.5em 1em 0.5em 0;
+    border-left: none;
+    font-size: 1.2em;
+}
+
+#filtre>span:hover
+{
+    background-color: #e0ecfd;
+    border-color: #e0ecfd;
+}
+
+#nombre
+{
+    font-size: 0.8em;
+}
+
+#nombre>i
+{
+    font-size: 0.7em;
+    color: #0065FC;
+    padding: 0.3em;
+    border: 0.8mm solid #F2F2F2;
+    border-radius: 50%;
+    margin: 1em 0.5em 1em 0;
+    width:1em;
+    height:1em;
+    text-align: center;
+}
+
+#hebergement, #populaire
+{
+    background-color: #F2F2F2;
+    padding: 1.5em;
+    margin: 0 3em 0 0;
+    border-radius: 25px;
+}
+
+h2, h3
+{
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+h3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#resulta
+{
+    display: flex;
+}
+
+#hebergement_choix
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#hebergement_choix>div>img
+{
+    width: 10em;
+    height: 5em;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover; 
+}
+
+#hebergement_choix>div
+{
+    background-color: white;
+    border: 1mm solid white;
+    border-radius: 15px;
+    margin: 1em 1em 0 0;
+}
+
+#hebergement_choix>div>p
+{
+    font-size: 0.8em;
+    margin: 0.1em 0 0 0.5em;
+}
+
+.bleu
+{
+    color: #0065FC;
+}
+
+.gris
+{
+    color: #F2F2F2;
+}
+
+#etoile>span
+{
+    font-size: 1em;
+}
+
+#hebergement_top>div>img
+{
+    width: 7em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+#hebergement_top>div
+{
+    display: flex;
+    flex-direction: row;
+}
+
