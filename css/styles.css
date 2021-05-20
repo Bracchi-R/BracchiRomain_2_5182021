@@ -4,9 +4,20 @@ body
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    width: 90%;
+    width: 100%;
     margin: auto;
     line-height: 1.4em;
+}
+
+#bloc_page
+{
+    width: 90%;
+    margin: auto;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .shadow
@@ -26,27 +37,26 @@ body
     padding: 1em 0 1em 0;
 }
 
-ul 
+nav>ul 
 {
     padding:1em;
     margin:1em;
     list-style-type:none;
 }
 
-li 
+nav>ul>li 
 {
     float:left;
 }
 
-li a
+nav>ul>li a
 {
     color: #0065FC;
-    text-decoration: none;
     padding:1em;
     margin:1em;
 }
 
-li a:hover
+nav>ul>li a:hover
 {
     color:black;
 }
@@ -333,4 +343,26 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+footer>ul
+{
+    padding-right: 10em;
+}
+
+footer>ul>li
+{
+    list-style: none;
+    padding: 0.5em 0 0.5em 0;
+}
+
+footer>ul>li>a
+{
+    color: black;
 }
