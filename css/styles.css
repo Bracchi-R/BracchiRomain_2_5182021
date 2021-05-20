@@ -78,7 +78,7 @@ nav>ul>li>a:hover
 #research>input
 {
     padding: 0.8em;
-    border-color: #F2F2F2;
+    border: 0.2mm solid #F2F2F2;
 }
 
 #research
@@ -172,11 +172,13 @@ nav>ul>li>a:hover
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 2em 0 2em;
+    gap: 1em;       /* remplace margin dans #city_results>div>article */
 }
 
 #city_results>h2
 {
     margin: 1em 2em 1em 2em;
+    padding-top: 0.5em;
 }
 
 #city_results>div>article
@@ -184,9 +186,9 @@ nav>ul>li>a:hover
     background-color: white;
     border: 1mm solid white;
     border-radius: 15px;
-    width: 25%;
-    margin-bottom: 2em;
-    padding-bottom: 1em;
+    width: 30%;
+    /* margin-bottom: 2em;
+    padding-bottom: 1em; */
 }
 
 #city_results>div>article>a>img
@@ -230,6 +232,7 @@ nav>ul>li>a:hover
 {
     display: flex;
     justify-content: space-between;
+    padding-top: 0.5em;
 }
 
 .popular_flex
@@ -288,6 +291,11 @@ nav>ul>li>a:hover
 #activities>article>a>img
 {
     border-radius: 15px 15px 15px 15px;
+}
+
+#activities>article>a>p
+{
+    margin-left: 1.5em;
 }
 
 /* footer */
