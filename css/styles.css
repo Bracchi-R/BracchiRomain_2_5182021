@@ -255,8 +255,7 @@ nav>ul>li>a:hover
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 550px;
-    background-color: red;     /* Help */
+    height: 34.375em; /* 550px */
 }
 
 #popular>section>div>article
@@ -346,3 +345,10 @@ footer>nav>section>ul>li>a
     color: black;
     line-height: 2em;
 }
+
+/* Responqive TEL */
+
+@media (max-width: px) {
+   
+    }
+  }
