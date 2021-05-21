@@ -243,8 +243,8 @@ nav>ul>li>a:hover
 
 .popular_flex>img
 {
-    width: 40%;
-    height: 100%;
+    width: 10em;
+    height: 13em;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -253,6 +253,9 @@ nav>ul>li>a:hover
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 550px;
     background-color: red;     /* Help */
 }
 
@@ -262,7 +265,7 @@ nav>ul>li>a:hover
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     font-size: 0.8em;
-    
+    height: 30%;
 }
 
 #popular>section>div>article>a
@@ -297,8 +300,10 @@ nav>ul>li>a:hover
 #activities>article>a>img
 {
     border-radius: 15px 15px 15px 15px;
+    
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 #activities>article>a>p
