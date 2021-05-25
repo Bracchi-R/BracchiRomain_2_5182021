@@ -33,29 +33,6 @@ main
     margin: auto;
 }
 
-/* Nav */
-
-header>nav>ul 
-{
-    display: flex;
-    justify-content: space-around;
-}
-
-header>nav>ul>li
-{
-    padding: 0 0 0 3em;
-}
-
-nav>ul>li>a
-{
-    color:#0065FC;
-}
-
-nav>ul>li>a:hover
-{
-    color:black;
-}
-
 .blue
 {
     color: #0065FC;
@@ -66,27 +43,54 @@ nav>ul>li>a:hover
     color: #F2F2F2;
 }
 
+.shadow {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 5%);
+}
+
+/* nav header */
+
+.nav_header>ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_header>ul>li
+{
+    padding: 0 0 0 3em;
+}
+
+.nav_header>ul>li>a
+{
+    color:#0065FC;
+}
+
+.nav_header>ul>li>a:hover
+{
+    color:black;
+}
+
 /* research */
 
-#research>i
+.research>i
 {
     background-color:#F2F2F2;
     padding: 0.8em;
     border-radius: 15px 0 0 15px;
 }
 
-#research>input
+.research>input
 {
     padding: 0.8em;
     border: 0.2mm solid #F2F2F2;
 }
 
-#research
+.research
 {
     display: flex;
 }
 
-#research>button
+.research>button
 {
     background-color:#0065FC;
     color:#FFFFFF;
@@ -97,13 +101,13 @@ nav>ul>li>a:hover
 
 /* filtered */
 
-#filtered
+.filtered
 {
     font-size: 0.8em;
     padding: 1.5em 0 1.5em 0;
 }
 
-#filtered>span>i
+.filtered>span>i
 {
     color: #0065FC;
     background-color: #e0ecfd;
@@ -115,7 +119,7 @@ nav>ul>li>a:hover
     text-align: center;
 }
 
-#filtered>span
+.filtered>span
 {
     margin: 1.2em;
     border: 1mm solid #F2F2F2;
@@ -125,18 +129,18 @@ nav>ul>li>a:hover
     font-size: 1.2em;
 }
 
-#filtered>span:hover
+.filtered>span:hover
 {
     background-color: #e0ecfd;
     border-color: #e0ecfd;
 }
 
-#number
+.number
 {
     font-size: 0.8em;
 }
 
-#number>i
+.number>i
 {
     font-size: 0.7em;
     color: #0065FC;
@@ -151,37 +155,34 @@ nav>ul>li>a:hover
 
 /* results */
 
-#results
+.results
 {
     display: flex;
     justify-content: space-between;
 }
 
-/* city results */
-
-#city_results
+.city_results
 {
     width: 63%;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 
-#city_results>div
+.city_results>div
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 2em 0 2em;
-    /* gap: 1em; */
 }
 
-#city_results>h2
+.city_results>h2
 {
-    margin: 1em 2em 1em 2em;
+    margin: 1em 2em 1em 1.5em;
     padding-top: 0.5em;
 }
 
-#city_results>div>article
+.thumbnail_city
 {
     background-color: white;
     border: 1mm solid white;
@@ -191,7 +192,7 @@ nav>ul>li>a:hover
     padding-bottom: 1em;
 }
 
-#city_results>div>article>a>img
+.thumbnail_city>a>img
 {
     width: 100%;
     height: 8em;
@@ -216,29 +217,24 @@ nav>ul>li>a:hover
 
 /* popular */
 
-#popular
+.popular_results
 {
     width: 32%;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 
-#popular>section
-{
-    margin: 0 2em 0 2em;
-}
-
-#popular>section>h2
+.popular_results>h2
 {
     display: flex;
     justify-content: space-between;
     padding-top: 0.5em;
+    margin: 1em 1em 1em 1.5em;    
 }
 
 .popular_flex
 {
-    display: flex;
-    
+    display: flex; 
 }
 
 .popular_flex>img
@@ -249,65 +245,105 @@ nav>ul>li>a:hover
     border-radius: 15px 0 0 15px;
 }
 
-#popular>section>div
+.popular_results>div
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 34.375em; /* 550px */
+    
 }
 
-#popular>section>div>article
+.stars
+{
+    padding-bottom: 1em;
+}
+
+.thumbnail_popular
 {
     border: 1mm solid white;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     font-size: 0.8em;
     height: 30%;
+    margin: 0 2em 0 2em;
 }
 
-#popular>section>div>article>a
+.thumbnail_popular>a
 {
     color: black;
+    display: flex;
 }
 
 .popular_flex>div
 {
     margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 /* activités */
+.activities
+{
+    margin-top: 3em;
+}
 
-#activities
+.block_activities
 {
     display: flex;
-    width: 100%;
-    height: 100%;
-    
+    justify-content: space-between;
 }
 
-#activities>article
+.activities_simple
 {
-    border-radius: 15px 15px 15px 15px;
-    background-color: red;                      /* Help */
-    width: 20%;
-    height: 100%;
-    
+    width: 22%;
 }
 
-#activities>article>a>img
+.activities_double
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.big
+{
+    width: 100%;
+    height: 25em;
+}
+
+.average
+{
+    width: 100%;
+    height: 11em;
+}
+
+.small
+{
+    width: 100%;
+    height: 7em;
+}
+
+.thumbnail_activities
 {
     border-radius: 15px 15px 15px 15px;
-    
-    width: 100%;
-    height: 100%;
+}
+
+.thumbnail_activities>a>img
+{
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
-#activities>article>a>p
+.thumbnail_activities>a>h3
 {
+    padding-bottom: 1em;
     margin-left: 1.5em;
+    color: black;
 }
 
 /* footer */
@@ -315,40 +351,34 @@ nav>ul>li>a:hover
 footer
 {
     background-color: #F2F2F2;
+    padding-bottom: 2em;
 }
 
-footer>nav
+.nav_footer
 {
     width: 90%;
     margin: auto;
     display: flex;
 }
 
-footer>nav>section
+.block_footer
 {
     margin-right: 10em;
     padding-top: 2em;
 }
 
-footer>nav>section>h2
+.block_footer>h2
 {
     font-size: 1em;
 }
 
-footer>nav>section>ul
+.block_footer>ul
 {
     padding: 0;
 }
 
-footer>nav>section>ul>li>a
+.block_footer>ul>li>a
 {
     color: black;
     line-height: 2em;
 }
-
-/* Responqive TEL */
-
-@media (max-width: px) {
-   
-    }
-  }
