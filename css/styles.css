@@ -560,7 +560,7 @@ h1
 
 .thumbnail_city>a>img
 {
-    height: 15em;
+    height: 20em;
 }
 
 .info_results
@@ -577,6 +577,33 @@ h1
 {
     font-size: 2em;
     margin: 1.5em 0 1.5em 0;
+}
+
+.block_activities
+{
+    flex-direction: column;
+    margin: 0;
+}
+
+.activities_simple, .activities_double
+{
+    width: auto;
+}
+
+.thumbnail_activities>a>img
+{
+    height: 20em;
+}
+
+.thumbnail_activities>a>h3
+{
+    font-size: 2.5em;
+}
+
+.nav_footer
+{
+    flex-direction: column;
+    font-size: 2em;
 }
 
 
