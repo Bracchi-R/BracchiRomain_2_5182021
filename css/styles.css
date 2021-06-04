@@ -49,23 +49,30 @@ main
 
 /* nav header */
 
-.nav_header>ul
+.nav_header ul
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
 }
 
-.nav_header>ul>li
-{
-    padding: 0 0 0 3em;
-}
 
-.nav_header>ul>li>a
+.nav_header a
 {
     color:#0065FC;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    display: inline-block;
 }
 
-.nav_header>ul>li>a:hover
+.nav_header .activ
+{
+    border-top: 2px solid #0065FC;
+}
+
+.nav_header a:hover
 {
     color:black;
 }
@@ -412,19 +419,50 @@ footer
     line-height: 2em;
 }
 
-/* iPhone 8 */
+/* Responsive */
 
 @media (max-width: 991px){
 
 .logo>a>img
 {
     width: 15em;
-	height: 15em;
+	height: 5em;
+}
+
+
+
+.nav_inscrire
+{
+    height: 5em;
+}
+.nav_header_resource 
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4em;
+}
+
+.nav_header_resource a
+{
+    border-bottom: 2px solid gray;
+}
+
+.nav_header_resource .activ
+{
+    border-bottom: 2px solid #0065FC;
+    border-top: none !important;
+}
+
+.nav_header_resource li, .nav_header_resource a
+{
+    width: 100%;
+
 }
 
 header
 {
-    align-items: center;
+    align-items: flex-start;
 }
 
 .nav_header>ul
@@ -605,7 +643,7 @@ h1
     width: auto;
 }
 
-.activities_double, .activities_double>article
+.activities_double>article
 {
     margin-bottom: 50px;
 }
@@ -632,10 +670,6 @@ h1
 
 @media (max-width: 768px) {
 
-header
-{
-    flex-direction: column;
-}
 
 .nav_header>ul
 {
@@ -683,4 +717,4 @@ header
 
 
 
-}.
+}
