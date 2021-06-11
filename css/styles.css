@@ -58,7 +58,6 @@ main
     padding: 0;
 }
 
-
 .nav_header a
 {
     color:#0065FC;
@@ -452,7 +451,6 @@ footer
 .nav_header_resource li, .nav_header_resource a
 {
     width: 100%;
-
 }
 
 header
@@ -658,7 +656,6 @@ h1
 }
 
 @media (max-width: 768px) {
-
 
 .nav_header>ul
 {
