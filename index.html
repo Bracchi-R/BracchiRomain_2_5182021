@@ -8,22 +8,18 @@
 </head>
 <body>
 	<header>
-    	<div class="logo">
-     		 <a href=""><img src="img/logo/Reservia.svg" alt="Logo de Reservia" /></a>
-    	</div>
-    	<nav class="nav_header">
-     		<ul>
-				<li>
-					<ul class="nav_header_resource">
-						<li><a class="activ" href="#city_results" title="">Hébergements</a></li>
-						<li><a href="#activities" title="">Activités</a></li>
-					</ul>
-				</li>
-				<li>
-					<a class="nav_inscrire" href="" title=""><strong>S'inscrire</strong></a>
-				</li>
-      		</ul>
-    	</nav>
+		<div class="header logo">
+			<a href="" class="link">
+			  <img src="img/logo/Reservia.svg" class="logo-img" alt="Logo de Reservia">
+			</a>
+		</div>
+		<nav class="header nav-header">
+			<a href="#results" class="link active link-size">Hébergements</a>
+			<a href="#activ" class="link link-g link-size">Activités</a>
+		</nav>
+		<div class="account-wrapper">
+			<a href="#" class="link link-size"><strong>S'Inscrire</strong></a>
+		</div>
   	</header>
 	<main>
 <!-- research -->
@@ -53,7 +49,7 @@
 <!-- filtered -->
 <!-- results -->
 		<section class="results">
-			<div class="city_results">
+			<div class="city_results" id="results">
 				<h2>Hébergements à Marseille</h2>
 					<div>
 						<article class="thumbnail_city shadow">
@@ -219,7 +215,7 @@
 		</section>
 <!-- results -->
 <!-- activities -->
-		<section class="activities">
+		<section class="activities" id="activ">
 			<h2>Activités à Marseille</h2>
 			<div class="block_activities">
 				<div class="activities_simple">
