@@ -441,7 +441,30 @@ footer
 
 /* Responsive */
 
-@media (max-width: 991px){
+@media all and (max-device-width: 768px), all and (max-width: 768px) {
+    /*
+body {
+        background-color: red;
+}   
+
+.thumbnail_city {
+    max-width: 45%;
+}
+.activities_simple {
+    max-width: 45%;
+}
+
+.activities_double {
+    max-width: 45%;
+}
+
+.thumbnail_activities h3
+{
+    line-height: 1em;
+    margin-left: -10px;
+}
+*/
+
 
 header {
     flex-flow: wrap;
@@ -610,13 +633,12 @@ h1
 
 .city_results>div
 {
-    flex-direction: column;
     margin: 0;
 }
 
 .thumbnail_city
 {
-    width: auto;
+    width: 45%;
 }
 
 .thumbnail_city img
@@ -642,19 +664,32 @@ h1
 
 .block_activities
 {
-    flex-direction: column;
     margin: 0;
+    flex-wrap: wrap;
+    padding-bottom: 32em;
 }
 
 .activities_simple, .activities_double
 {
-    width: auto;
+    width: 45%;
+    max-height: 30em;
+}
+
+.activities_simple
+{
+    order: 0;
+    margin-bottom: 50px;
+}
+
+.activities_double{
+    order: 1;
 }
 
 .activities_double article
 {
     margin-bottom: 50px;
 }
+
 
 .thumbnail_activities img
 {
@@ -664,60 +699,49 @@ h1
 .thumbnail_activities h3
 {
     font-size: 2.5em;
+    line-height: 1em;
 }
 
 .nav_footer
 {
     flex-direction: column;
     font-size: 2em;
+    margin-top: 2em;
 }
 
 }
 
-@media (max-width: 768px) {
+@media all and (max-device-width: 375px), all and (max-width: 375px){
 
-.filtered_flex strong
+ .city_results>div {
+        flex-direction: column;
+    }
+
+.thumbnail_city
+    {
+        width: auto;
+    }
+
+.block_activities
+    {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between
+    }
+
+.activities_simple, .activities_double
 {
-    display: none;
-    font-size: 0.5em;
-}
-
-.filtered_flex span
-{
-    border: none;
-    font-size: 0.5em;
-}
-
-.filtered_flex
-{
-    flex-direction: row;
-}
-
-.popular_results h2
-{
-    font-size: 1em;
-}
-
-.popular_flex img
-{
-    min-width: 8em;
-    max-width: 5em;
-}
-
-.block_activities h3
-{
-    font-size: 1.2em;  
-}
-
-.nav_footer
-{
-    font-size: 1em;
-}
-
-.block_footer
-{
-    line-height: 1em;
-    margin-right: 0;
-}
+    width: 100%;
 
 }
+
+.activities_double {
+    margin-bottom: 5em; 
+}
+
+.double_ec{
+    margin-top: 32em;
+}
+}
+    
+
